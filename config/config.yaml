@@ -1,0 +1,22 @@
+slack:
+  webhook_url: "https://hooks.slack.com/services/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"
+
+discord:
+  webhook_url: "https://discordapp.com/api/webhooks/1291603140570775646/JTu7auWky-8dxS8bFCXlg7LYc4HPxoweiiyq772kCFSOWfopOXIJFPMkr4tIvSiqSnGK"
+
+telegram:
+  bot_token: "7368392863:AAHFUveUPw6JHOOrnkLsD26LDXuvtfXWO-0"
+  chat_id: "-1002299367785"
+
+api:
+  mainnet: "https://zetachain-mainnet.g.allthatnode.com/archive/rest/cosmos/gov/v1/proposals"
+  athens: "https://zetachain-athens.g.allthatnode.com/archive/rest/cosmos/gov/v1/proposals"
+
+status:
+  incidents_api: "https://testingstatusdowntime.statuspage.io/api/v2/incidents.json"
+  components_api: "https://testingstatusdowntime.statuspage.io/api/v2/components.json"
+
+#  incidents_api: "https://status.zetachain.com/api/v2/incidents.json"
+#  components_api: "https://status.zetachain.com/api/v2/components.json"
+
+pending_proposals_file: "state/pending.txt"
