@@ -44,10 +44,6 @@ The **SRE Notifier Tool** is designed to automate communication with community m
 2. Update config.yaml with your credentials and settings:
 
    ```yaml
-   vault:
-     address: "http://127.0.0.1:8200"
-     token: "s.YOUR_VAULT_TOKEN"
-   
    slack:
      webhook_url: "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
    
@@ -62,38 +58,9 @@ The **SRE Notifier Tool** is designed to automate communication with community m
 You can run the application using the main.py script.
 
    ```bash
-   python src/main.py
-   ```
-For example, sending a test message via Slack:
-
-   ```python
-   from src.slack_notifier import SlackNotifier
-   notifier = SlackNotifier(webhook_url="YOUR_SLACK_WEBHOOK_URL")
-   notifier.send_message(message="Hello from the SRE Notifier Tool!")
-   ```
-# Running in Docker
-1. Build the Docker image:
-
-   ```bash
-   docker build -t community-communicator .
-   ```
-2. Run the container:
-
-   ```bash
-   docker run --rm -v $(pwd)/config:/app/config community-communicator
-   ```
-# Testing
-1. Install the testing requirements:
-
-   ```bash
-   pip install -r requirements-dev.txt
+   python src/main.py 
    ```
 
-2. Run the tests using pytest:
-
-   ```bash
-   pytest tests/
-   ```
 
 Contributing
 We welcome contributions! Please follow these steps to contribute:
